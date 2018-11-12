@@ -1,0 +1,20 @@
+{
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "dist": true,
+        "**/obj": true,
+        "**/bin": true
+    },
+    "window.zoomLevel": 0,
+    "editor.mouseWheelZoom": true,
+    "editor.formatOnSave": true,
+    "explorer.autoReveal": false,
+    "terminal.integrated.scrollback": 5000,
+    "eslint.packageManager": "yarn"
+}
