@@ -11,6 +11,7 @@
         "**/obj": true,
         "**/bin": true
     },
+    "window.newWindowDimensions": "maximized",
     "window.zoomLevel": 0,
     "editor.mouseWheelZoom": true,
     "editor.formatOnSave": true,
