@@ -1,0 +1,38 @@
+{
+    "Vue Single File Component": {
+        "scope": "vue",
+        "prefix": "sfc",
+        "body": [
+            "<template>",
+            "</template>",
+            "<script setup lang=\"ts\">",
+            "\timport { ref } from \"vue\";",
+            "</script>"
+        ]
+    },
+
+    "Vue tsconfig": {
+        "scope": "json",
+        "prefix": "tsconfig",
+        "body": [
+            "{",
+            "\"extends\": \"@vue/tsconfig/tsconfig.json\",",
+            "\"include\": [\"src\"],",
+            "\"exclude\": [\"node_modules\", \"dist\"]",
+            "}"
+        ]
+    },
+
+    "Vite config": {
+        "scope": "typescript",
+        "prefix": "vite",
+        "body": [
+            "import { defineConfig } from \"vite\";",
+            "import vue from \"@vitejs/plugin-vue\";",
+            "",
+            "export default defineConfig({",
+            "\tplugins: [vue()]",
+            "});"
+        ]
+    }
+}
