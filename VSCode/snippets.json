@@ -11,6 +11,38 @@
         ]
     },
 
+    "Vue Directive": {
+        "scope": "vue,typescript",
+        "prefix": "directive",
+        "body": [
+            "import type { DirectiveBinding, VNode } from \"vue\";",
+            "",
+            "//https://vuejs.org/guide/reusability/custom-directives.html",
+            "const myDirective = {",
+            "\t// called before bound element's attributes",
+            "\t// or event listeners are applied",
+            "\tcreated(el: HTMLElement, binding: DirectiveBinding, vnode: VNode) {",
+            "\t\t// see below for details on arguments",
+            "\t},",
+            "\t// called right before the element is inserted into the DOM.",
+            "\tbeforeMount(el: HTMLElement, binding: DirectiveBinding, vnode: VNode) {},",
+            "\t// called when the bound element's parent component",
+            "\t// and all its children are mounted.",
+            "\tmounted(el: HTMLElement, binding: DirectiveBinding, vnode: VNode) {},",
+            "\t// called before the parent component is updated",
+            "\tbeforeUpdate(el: HTMLElement, binding: DirectiveBinding, vnode: VNode, prevVnode: VNode) {},",
+            "\t// called after the parent component and",
+            "\t// all of its children have updated",
+            "\tupdated(el: HTMLElement, binding: DirectiveBinding, vnode: VNode, prevVnode: VNode) {},",
+            "\t// called before the parent component is unmounted",
+            "\tbeforeUnmount(el: HTMLElement, binding: DirectiveBinding, vnode: VNode) {},",
+            "\t// called when the parent component is unmounted",
+            "\tunmounted(el: HTMLElement, binding: DirectiveBinding, vnode: VNode) {}",
+            "};",
+            "// app.directive(\"my-directive\", myDirective);"
+        ]
+    },
+
     "Vue tsconfig": {
         "scope": "json",
         "prefix": "tsconfig",
