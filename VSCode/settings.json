@@ -18,5 +18,7 @@
     "explorer.autoReveal": false,
     "terminal.integrated.scrollback": 5000,
     "eslint.packageManager": "yarn",
-	"editor.stickyScroll.enabled": false
+    "editor.stickyScroll.enabled": false,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "diffEditor.ignoreTrimWhitespace": false,
 }
